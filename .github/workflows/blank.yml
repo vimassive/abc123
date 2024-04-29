@@ -1,8 +1,7 @@
 name: "Sysdig IaC"
 
-on:
-  push:
-    branches: ["sysdig-eval"]
+on: [push]
+
 jobs:
   analyze:
     name: Analyze
