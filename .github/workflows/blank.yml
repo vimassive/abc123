@@ -25,7 +25,7 @@ jobs:
           sysdig-secure-token: ${{ secrets.SYSDIG_SECURE_TOKEN }}
           cli-scanner-version: 1.9.0
           mode: iac
-          iac-scan-path: ${{ github.workspace }}/terraform
+          iac-scan-path: ./terraform/aws/
           recursive: true
 
       - name: Upload SARIF file
